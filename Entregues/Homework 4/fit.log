@@ -1,0 +1,31 @@
+
+
+*******************************************************************************
+Thu Mar 13 10:26:42 2025
+
+
+FIT:    data read from "MCVolume.dat" u 1:2
+        format = x:z
+        x range restricted to [80000.0 : 100000.]
+        #datapoints = 201
+        residuals are weighted equally (unit weight)
+
+function used for fitting: l(x)
+	l(x)=n
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   n            
+   0 2.0401947616e+03   0.00e+00  1.00e+00    1.000000e+00
+   3 3.6159036062e-01  -3.42e-05  1.00e-03    4.185659e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.36159
+rel. change during last iteration : -3.42168e-10
+
+degrees of freedom    (FIT_NDF)                        : 200
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.04252
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00180795
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+n               = 4.18566          +/- 0.002999     (0.07165%)
