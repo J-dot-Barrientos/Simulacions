@@ -1,7 +1,7 @@
 
 
 *******************************************************************************
-Thu Mar 13 10:26:42 2025
+Tue Mar 18 00:14:06 2025
 
 
 FIT:    data read from "MCVolume.dat" u 1:2
@@ -15,17 +15,17 @@ function used for fitting: l(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   n            
-   0 2.0401947616e+03   0.00e+00  1.00e+00    1.000000e+00
-   3 3.6159036062e-01  -3.42e-05  1.00e-03    4.185659e+00
+   0 2.0418670686e+03   0.00e+00  1.00e+00    1.000000e+00
+   3 2.5452624306e-01  -4.87e-05  1.00e-03    4.187048e+00
 
 After 3 iterations the fit converged.
-final sum of squares of residuals : 0.36159
-rel. change during last iteration : -3.42168e-10
+final sum of squares of residuals : 0.254526
+rel. change during last iteration : -4.86522e-10
 
 degrees of freedom    (FIT_NDF)                        : 200
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.04252
-variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00180795
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.035674
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00127263
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-n               = 4.18566          +/- 0.002999     (0.07165%)
+n               = 4.18705          +/- 0.002516     (0.0601%)
