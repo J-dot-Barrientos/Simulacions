@@ -32,60 +32,41 @@ delta = float(input("\nEnter size of jump (example 0.3): \n>"))
 total_random_points=min_random_points
 while (total_random_points <= max_random_points):
 
-    # Init counter of number of points inside unit sphere and inside unit cube
+    # Init counter of number of points inside unit sphere and inside cube
     inside_sphere = 0
     inside_cube = 0
     outside = 0
-
-    #Create list to save x,y of points inside sphere to be shown in the graph
-    xs = []
-    ys = []
-    zs = []
-
-    #Create list to save x,y of points inside cube but outside sphere to be shown in the graph
-    xc = []
-    yc = []
-    zc = []
-
     #---------------------------------------------------
-    #Calculation
+    # Calculation
 
-    #Initial position
+    # Initial position
     x=1.0
     y=1.0
     z=1.0
 
     while (inside_cube<total_random_points):
 
-        #generate a random jump
+        # generate a random jump
         del_x = np.random.uniform(-delta, delta)
         del_y = np.random.uniform(-delta, delta)
         del_z = np.random.uniform(-delta, delta)
 
-        #check new positions and if they are outside the sphere make zero jump
+        # check new positions and if they are outside the sphere make zero jump
         if abs(x+del_x) > 1.0 or abs(y+del_y) > 1.0 or abs(z+del_z) > 1.0:
             outside = outside +1
             del_x = 0.0
             del_y = 0.0
             del_z = 0.0
 
-        #Update number of points inside cube and update the new starting position
+        # Update number of points inside cube and update the new starting position
         inside_cube = inside_cube +1
         x = x + del_x
         y = y + del_y
         z = z + del_z
 
-        #check whether it is inside sphere (count and save for representation)
+        # check whether it is inside sphere (count and save for representation)
         if x**2 + y**2 + z**2 <= 1.0:
             inside_sphere = inside_sphere +1
-            xs.append(x)
-            ys.append(y)
-            zs.append(z)
-        else:
-            xc.append(x)
-            yc.append(y)
-            zc.append(z)
-
     #---------------------------------------------------
 
     # Statistics
@@ -93,12 +74,12 @@ while (total_random_points <= max_random_points):
     # Number of points inside sphere as compared with total
     sphere_ratio = inside_sphere /  inside_cube
 
-    #Number of points inside sphere as compared with those inside the total cube with volume 8.0
+    # Number of points inside sphere as compared with those inside the total cube with volume 8.0
     fourthirdspi_approx = 8.0*sphere_ratio
 
-    #save data to a file
+    # Save data to a file
     print(f'{total_random_points} {fourthirdspi_approx}\n')
     f.write(f'{total_random_points} {fourthirdspi_approx}\n')
 
-    #update
+    # Update
     total_random_points=total_random_points + step
