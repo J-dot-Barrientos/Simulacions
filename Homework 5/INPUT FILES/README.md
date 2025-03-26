@@ -1,8 +1,8 @@
-# Example Input 
+# Input 
 
-Example Input files for simulating the reaction: 
+Input files for simulating the reaction: 
 - pseudopotentials
 - fdf siesta script (TEMPERATURE CHANGED TO 300 K!)
 -  .XV file with input positons and velocities
 
-(the .old file is an older version and it can be disregarded)
+(the .old file is an older version and it MUST be disregarded)
